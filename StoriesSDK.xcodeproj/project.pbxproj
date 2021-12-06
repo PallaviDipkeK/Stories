@@ -18,8 +18,19 @@
 		0D11A8EE27520A7800F8C2CF /* StoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11A8EA27520A7800F8C2CF /* StoryBar.swift */; };
 		0D11A8F827520FB200F8C2CF /* story2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0D11A8F627520FB200F8C2CF /* story2.gif */; };
 		0D11A8F927520FB200F8C2CF /* story1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0D11A8F727520FB200F8C2CF /* story1.gif */; };
+		0D16030C275E5DF100767A35 /* StoriesSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16030B275E5DF100767A35 /* StoriesSDKTests.swift */; };
 		9028F9DA904FE4EEAAA78315 /* Pods_StoriesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0C623092B7D68B45AC2893 /* Pods_StoriesSDK.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D16030E275E5DF100767A35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D11A8BB2752096200F8C2CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D11A8C22752096200F8C2CF;
+			remoteInfo = StoriesSDK;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01F30893CABC29CBC2F8B0FE /* Pods-StoriesSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoriesSDK.debug.xcconfig"; path = "Target Support Files/Pods-StoriesSDK/Pods-StoriesSDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +47,9 @@
 		0D11A8EA27520A7800F8C2CF /* StoryBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBar.swift; sourceTree = "<group>"; };
 		0D11A8F627520FB200F8C2CF /* story2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = story2.gif; sourceTree = "<group>"; };
 		0D11A8F727520FB200F8C2CF /* story1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = story1.gif; sourceTree = "<group>"; };
+		0D160309275E5DF100767A35 /* StoriesSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoriesSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D16030B275E5DF100767A35 /* StoriesSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesSDKTests.swift; sourceTree = "<group>"; };
+		0D16030D275E5DF100767A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		347C75280C684E4C6D098046 /* Pods-StoriesSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoriesSDK.release.xcconfig"; path = "Target Support Files/Pods-StoriesSDK/Pods-StoriesSDK.release.xcconfig"; sourceTree = "<group>"; };
 		4A0C623092B7D68B45AC2893 /* Pods_StoriesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoriesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -49,6 +63,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D160306275E5DF100767A35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0D11A8C52752096200F8C2CF /* StoriesSDK */,
+				0D16030A275E5DF100767A35 /* StoriesSDKTests */,
 				0D11A8C42752096200F8C2CF /* Products */,
 				AF18B7815C5A8EE6136AAD23 /* Pods */,
 				2FC86DB212B52A5DD216324F /* Frameworks */,
@@ -66,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0D11A8C32752096200F8C2CF /* StoriesSDK.app */,
+				0D160309275E5DF100767A35 /* StoriesSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +118,15 @@
 				0D11A8EA27520A7800F8C2CF /* StoryBar.swift */,
 			);
 			path = Stories;
+			sourceTree = "<group>";
+		};
+		0D16030A275E5DF100767A35 /* StoriesSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D16030B275E5DF100767A35 /* StoriesSDKTests.swift */,
+				0D16030D275E5DF100767A35 /* Info.plist */,
+			);
+			path = StoriesSDKTests;
 			sourceTree = "<group>";
 		};
 		2FC86DB212B52A5DD216324F /* Frameworks */ = {
@@ -136,6 +168,24 @@
 			productReference = 0D11A8C32752096200F8C2CF /* StoriesSDK.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0D160308275E5DF100767A35 /* StoriesSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D160312275E5DF100767A35 /* Build configuration list for PBXNativeTarget "StoriesSDKTests" */;
+			buildPhases = (
+				0D160305275E5DF100767A35 /* Sources */,
+				0D160306275E5DF100767A35 /* Frameworks */,
+				0D160307275E5DF100767A35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D16030F275E5DF100767A35 /* PBXTargetDependency */,
+			);
+			name = StoriesSDKTests;
+			productName = StoriesSDKTests;
+			productReference = 0D160309275E5DF100767A35 /* StoriesSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,6 +197,10 @@
 				TargetAttributes = {
 					0D11A8C22752096200F8C2CF = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					0D160308275E5DF100767A35 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0D11A8C22752096200F8C2CF;
 					};
 				};
 			};
@@ -164,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				0D11A8C22752096200F8C2CF /* StoriesSDK */,
+				0D160308275E5DF100767A35 /* StoriesSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +233,13 @@
 				0D11A8F827520FB200F8C2CF /* story2.gif in Resources */,
 				0D11A8D02752096300F8C2CF /* Assets.xcassets in Resources */,
 				0D11A8CE2752096200F8C2CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D160307275E5DF100767A35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +301,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D160305275E5DF100767A35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D16030C275E5DF100767A35 /* StoriesSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D16030F275E5DF100767A35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D11A8C22752096200F8C2CF /* StoriesSDK */;
+			targetProxy = 0D16030E275E5DF100767A35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0D11A8CC2752096200F8C2CF /* Main.storyboard */ = {
@@ -417,6 +495,46 @@
 			};
 			name = Release;
 		};
+		0D160310275E5DF100767A35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BJGH6J8PG2;
+				INFOPLIST_FILE = StoriesSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openBank.com.StoriesSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoriesSDK.app/StoriesSDK";
+			};
+			name = Debug;
+		};
+		0D160311275E5DF100767A35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BJGH6J8PG2;
+				INFOPLIST_FILE = StoriesSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openBank.com.StoriesSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoriesSDK.app/StoriesSDK";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +552,15 @@
 			buildConfigurations = (
 				0D11A8D82752096300F8C2CF /* Debug */,
 				0D11A8D92752096300F8C2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D160312275E5DF100767A35 /* Build configuration list for PBXNativeTarget "StoriesSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D160310275E5DF100767A35 /* Debug */,
+				0D160311275E5DF100767A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
