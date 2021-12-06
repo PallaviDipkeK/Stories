@@ -37,8 +37,8 @@ class OuterCell: UICollectionViewCell {
         storyBar = StoryBar(numberOfSegments: story?.count ?? 0)
         storyBar.frame = CGRect(x: 15, y: CGFloat(10), width: self.frame.width - 30, height: 4)
         storyBar.delegate = self
-        storyBar.animatingBarColor = UIColor.systemYellow
-        storyBar.nonAnimatingBarColor = UIColor.yellow
+        storyBar.animatingBarColor = UIColor.cyan
+        storyBar.nonAnimatingBarColor = UIColor.lightGray
         storyBar.padding = 2
         storyBar.resetSegmentsTill(index: 0)
         contentView.addSubview(storyBar)

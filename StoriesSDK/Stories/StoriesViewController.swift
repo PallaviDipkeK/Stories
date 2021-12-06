@@ -59,7 +59,7 @@ class StoriesViewController: UIViewController {
     
     func showNextUserStory() {
         let newUserIndex = currentIndex + 1
-        if newUserIndex < storiesData.count ?? 0 {
+        if newUserIndex < storiesData.count {
             currentIndex = newUserIndex
         } else {
             cancelBtnTouched()
