@@ -10,16 +10,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
-         - name: Select Xcode
+      - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.3.app
 
-    - name: Setup ruby
-      uses: ruby/setup-ruby@v1
-      with:
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+       with:
         ruby-version: 2.7.2
         bundler-cache: true
         
-    - name: Install Pods
+      - name: Install Pods
       run: |
         pod install
 
@@ -40,7 +40,7 @@ jobs:
         run: ./.github/scripts/export_ipa.sh
       # - name: Publishing app
       #   if: success()
-        env:
-          APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
-          APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
-        run: ./.github/scripts/publish_testflight.sh
+#        env:
+#          APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
+#          APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
+#        run: ./.github/scripts/publish_testflight.sh
