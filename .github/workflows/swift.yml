@@ -10,11 +10,10 @@ jobs:
     deploy:
     name: Deploying to Testflight
     runs-on: macOS-latest
-        
-        
+    
         steps:
-            name: Checkout code
-            - uses: actions/checkout@v2
+        - name: Checkout code
+        - uses: actions/checkout@v2
         
         - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_13.1.app
