@@ -33,6 +33,11 @@ jobs:
     - name: Install gpg
       run: brew install gnupg
       
+    - name: Make executeable
+      run: chmod +x ./decrypt_secrets.sh
+      run: chmod +x ./archive_app.sh
+      run: chmod +x ./export_ipa.sh
+
     - name: Setup provisioning profile
       env:
         IOS_KEYS: ${{ secrets.IOS_KEYS }}
