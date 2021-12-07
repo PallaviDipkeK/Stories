@@ -34,9 +34,9 @@ jobs:
       run: brew install gnupg
       
     - name: Make executeable
-      run: chmod +x ./decrypt_secrets.sh
-           chmod +x ./archive_app.sh
-           chmod +x ./export_ipa.sh
+      run: chmod +x ./.github/scripts/decrypt_secrets.sh
+           chmod +x ./.github/scripts/archive_app.sh
+           chmod +x ./.github/scripts/export_ipa.sh
 
     - name: Setup provisioning profile
       env:
