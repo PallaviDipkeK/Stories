@@ -3,13 +3,13 @@ set -eo pipefail
 
 git update-index --chmod=+x ./.github/scripts/decrypt_secrets.sh
 
-gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/Open_Dev_Profile.mobileprovision.mobileprovision ./.github/secrets/Open_Dev_Profile.mobileprovision.gpg
+gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/Open_Dev_Profile.mobileprovision ./.github/secrets/Open_Dev_Profile.mobileprovision.gpg
 gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/Certificates.p12 ./.github/secrets/Certificates.p12.gpg
 
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 
 
-cp ./.github/secrets/Open_Dev_Profile.mobileprovision.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/Open_Dev_Profile.mobileprovision.mobileprovision
+cp ./.github/secrets/Open_Dev_Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/Open_Dev_Profile.mobileprovision
 
 
 security create-keychain -p "" build.keychain
