@@ -33,10 +33,10 @@ jobs:
     - name: Install gpg
       run: brew install gnupg
       
-    - name: Make executeable
-      run: chmod +x ./secrets/decrypt_secrets.sh
-           chmod +x ./secrets/archive_app.sh
-           chmod +x ./secrets/export_ipa.sh
+#    - name: Make executeable
+#      run: chmod +x ./secrets/decrypt_secrets.sh
+#           chmod +x ./secrets/archive_app.sh
+#           chmod +x ./secrets/export_ipa.sh
 
     - name: Setup provisioning profile
       env:
