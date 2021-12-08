@@ -34,7 +34,7 @@ jobs:
       run: brew install gnupg
       
     - name: Give Permissions
-      run: git update-index --chmod=+x ./.github/scripts/decrypt_secrets.sh
+      run: git update-index --chmod=+x ./.github/secrets/decrypt_secrets.sh
 
 #           chmod +x ./.github/secrets/archive_app.sh
 #           chmod +x ./.github/secrets/export_ipa.sh
