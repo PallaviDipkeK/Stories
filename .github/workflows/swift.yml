@@ -57,7 +57,7 @@ jobs:
 
     - name: Make Artefact
       run: |
-          zip artefact.zip App.ipa App.app.dSYM.zip
+          zip artefact.zip StoriesSDK.ipa StoriesSDK.app.dSYM.zip
     - uses: actions/upload-artifact@v1
       with:
           name: artefact.zip
