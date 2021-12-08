@@ -35,16 +35,21 @@ jobs:
       
     - name: Give Permissions
       run: git update-index --chmod=+x ./.github/secrets/decrypt_secrets.sh
-           git update-index --chmod=+x ./.github/secrets/archive_app.sh
-           git update-index --chmod=+x ./.github/secrets/export_ipa.sh
+          
 #           chmod +x ./.github/secrets/archive_app.sh
 #           chmod +x ./.github/secrets/export_ipa.sh
+
+    - name: Give Permissions
+      git update-index --chmod=+x ./.github/secrets/archive_app.sh
 
     - name: Setup provisioning profile
       env:
         IOS_KEYS: ${{ secrets.IOS_KEYS }}
       run: chmod 755 ./.github/secrets/decrypt_secrets.sh
      
+    - name: Give Permissions
+      git update-index --chmod=+x ./.github/secrets/export_ipa.sh
+      
     - name: Archiving project
       env:
           PR_NUMBER: $(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
