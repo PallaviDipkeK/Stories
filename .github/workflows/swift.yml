@@ -48,7 +48,7 @@ jobs:
       run: chmod 755 ./.github/secrets/decrypt_secrets.sh
      
     - name: Give Permissionsssssssss
-      git update-index --chmod=+x ./.github/secrets/export_ipa.sh
+      run: git update-index --chmod=+x ./.github/secrets/export_ipa.sh
       
     - name: Archiving project
       env:
