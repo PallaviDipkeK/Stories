@@ -86,7 +86,6 @@ extension OuterCell: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InnerCell", for: indexPath) as! InnerCell
         let data = story?[indexPath.row]
-        print(story)
         cell.setImage(data ?? "", deeplink: data ?? "")
         cell.delegate = self
         return cell

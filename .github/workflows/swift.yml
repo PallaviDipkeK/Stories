@@ -33,28 +33,25 @@ jobs:
     - name: Install gpg
       run: brew install gnupg
       
-    - name: Give Permissions
+    - name: Give Permissions for provisioning profile
       run: git update-index --chmod=+x ./.github/secrets/decrypt_secrets.sh
-          
-#           chmod +x ./.github/secrets/archive_app.sh
-#           chmod +x ./.github/secrets/export_ipa.sh
-
-    - name: Give Permissionsssss
-      run: git update-index --chmod=+x ./.github/secrets/archive_app.sh
-
+              
     - name: Setup provisioning profile
       env:
         IOS_KEYS: ${{ secrets.IOS_KEYS }}
       run: chmod 755 ./.github/secrets/decrypt_secrets.sh
      
-    - name: Give Permissionsssssssss
-      run: git update-index --chmod=+x ./.github/secrets/export_ipa.sh
-      
+    - name: Give Permission For Archieve
+      run: git update-index --chmod=+x ./.github/secrets/archive_app.sh
+
     - name: Archiving project
       env:
           PR_NUMBER: $(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
       run: chmod 755 ./.github/secrets/archive_app.sh
-
+      
+    - name: Give Permissionsssssssss
+      run: git update-index --chmod=+x ./.github/secrets/export_ipa.sh
+      
     - name: Exporting .ipa
       run: chmod 755 ./.github/secrets/export_ipa.sh
 
