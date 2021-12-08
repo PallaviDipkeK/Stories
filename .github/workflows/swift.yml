@@ -55,6 +55,10 @@ jobs:
     - name: Exporting .ipa
       run: chmod 755 ./.github/secrets/export_ipa.sh
 
+    - name: Download Artifact from expo
+      run: mkdir build_artifacts; export EXPO_ARTIFACT_URL=$(expo url:ipa); cURL $EXPO_ARTIFACT_URL --output ./build_artifacts/$(basename $EXPO_ARTIFACT_URL);
+
+        # Upload the ipa to Testflight using xcrun. I need to provide the ipa file, apple user id, and app specific password to prevent 2FA problems.
     # - name: Publishing app
     #   if: success()
     #   env:
