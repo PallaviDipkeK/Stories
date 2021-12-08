@@ -35,7 +35,8 @@ jobs:
       
     - name: Give Permissions
       run: git update-index --chmod=+x ./.github/secrets/decrypt_secrets.sh
-
+           git update-index --chmod=+x ./.github/secrets/archive_app.sh
+           git update-index --chmod=+x ./.github/secrets/export_ipa.sh
 #           chmod +x ./.github/secrets/archive_app.sh
 #           chmod +x ./.github/secrets/export_ipa.sh
 
@@ -47,10 +48,10 @@ jobs:
     - name: Archiving project
       env:
           PR_NUMBER: $(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-      run: ./.github/scripts/archive_app.sh
+      run: chmod 755 ./.github/secrets/archive_app.sh
 
     - name: Exporting .ipa
-      run: ./.github/scripts/export_ipa.sh
+      run: chmod 755 ./.github/secrets/export_ipa.sh
 
     # - name: Publishing app
     #   if: success()
