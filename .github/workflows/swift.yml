@@ -56,7 +56,7 @@ jobs:
       run: chmod 755 ./.github/secrets/export_ipa.sh
 
     - name: Make Artefact
-        run: |
+      run: |
           zip artefact.zip App.ipa App.app.dSYM.zip
     - uses: actions/upload-artifact@v1
         with:
