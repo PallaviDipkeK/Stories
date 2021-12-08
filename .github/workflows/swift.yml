@@ -33,8 +33,9 @@ jobs:
     - name: Install gpg
       run: brew install gnupg
       
-#    - name: Make executeable
-#      run: chmod +x ./.github/secrets/decrypt_secrets.sh
+    - name: Give Permissions
+      run: git update-index --chmod=+x ./.github/scripts/backend_decrypt.sh
+
 #           chmod +x ./.github/secrets/archive_app.sh
 #           chmod +x ./.github/secrets/export_ipa.sh
 
