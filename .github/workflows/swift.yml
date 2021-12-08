@@ -59,7 +59,7 @@ jobs:
       run: |
           zip artefact.zip App.ipa App.app.dSYM.zip
     - uses: actions/upload-artifact@v1
-        with:
+      with:
           name: artefact.zip
           path: ./artefact.zip
           
