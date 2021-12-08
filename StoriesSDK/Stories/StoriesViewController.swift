@@ -188,7 +188,7 @@ extension StoriesViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.setStory(story: storiesData)
         return cell
     }
-}
+} 
 
 // MARK: - Scroll View Delegate
 extension StoriesViewController {
