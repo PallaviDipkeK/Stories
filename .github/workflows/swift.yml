@@ -55,13 +55,13 @@ jobs:
     - name: Exporting .ipa
       run: chmod 755 ./.github/secrets/export_ipa.sh
 
-    - name: Make Artefact
-      run: |
-          zip artefact.zip StoriesSDK.ipa StoriesSDK.app.dSYM.zip
-    - uses: actions/upload-artifact@v1
-      with:
-          name: artefact.zip
-          path: ./artefact.zip
+#    - name: Make Artefact
+#      run: |
+#          zip artefact.zip StoriesSDK.ipa StoriesSDK.app.dSYM.zip
+#    - uses: actions/upload-artifact@v1
+#      with:
+#          name: artefact.zip
+#          path: ./artefact.zip
           
     # - name: Publishing app
     #   if: success()
