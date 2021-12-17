@@ -34,10 +34,10 @@ build:
 
 #!/bin/bash
 
-PROVISIONING_PROFILE="MyApp"
-CODE_SIGN_IDENTITY="Apple Development: MyApp (XXXXXXXXXX)"
-DOMAIN="MyApp.com"
-PRODUCT_BUNDLE_IDENTIFIER="com.MyApp.app"
+PROVISIONING_PROFILE="StoriesSDK"
+CODE_SIGN_IDENTITY="Apple Development: StoriesSDK (5TLXGJ5BJC)"
+DOMAIN="StoriesSDK.com"
+PRODUCT_BUNDLE_IDENTIFIER="co.opendigi.openbook"
 
 # Get dependencies
 function get_dependencies()
