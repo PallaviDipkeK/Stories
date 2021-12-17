@@ -22,8 +22,20 @@ build:
       env:
       SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
-    - name: Set up code signing
-      run: source .github/ios/build.sh && setup_code_signing
+    - name: Make Artefact
+      run: |
+          zip artefact.zip StoriesSDK.ipa StoriesSDK.app.dSYM.zip
+    - uses: actions/upload-artifact@v1
+      with:
+          name: artefact.zip
+          path: ./artefact.zip
+          
+    # - name: Publishing app
+    #   if: success()
+    #   env:
+    #       APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
+    #       APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
+    #   run: ./.github/scripts/publish_testflight.sh
 
     - name: Build app
       run: source .github/ios/build.sh && build_app
