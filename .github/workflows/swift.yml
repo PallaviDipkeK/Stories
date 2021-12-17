@@ -22,11 +22,11 @@ build:
       env:
       SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
-#    - name: Set up code signing
-#      run: source .github/ios/build.sh && setup_code_signing
-#
-#    - name: Build app
-#      run: source .github/ios/build.sh && build_app
-#
-#    - name: Upload artifacts
-#      run: source .github/ios/build.sh && upload_artifacts
+    - name: Set up code signing
+      run: source .github/ios/build.sh && setup_code_signing
+
+    - name: Build app
+      run: source .github/ios/build.sh && build_app
+
+    - name: Upload artifacts
+      run: source .github/ios/build.sh && upload_artifacts
