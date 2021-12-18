@@ -76,6 +76,7 @@
 		0D11A8BA2752096200F8C2CF = {
 			isa = PBXGroup;
 			children = (
+				0DF74F13276DC41000E8B5E2 /* Gemfile */,
 				0D11A8C52752096200F8C2CF /* StoriesSDK */,
 				0D16030A275E5DF100767A35 /* StoriesSDKTests */,
 				0D11A8C42752096200F8C2CF /* Products */,
@@ -127,6 +128,13 @@
 				0D16030D275E5DF100767A35 /* Info.plist */,
 			);
 			path = StoriesSDKTests;
+			sourceTree = "<group>";
+		};
+		0DF74F13276DC41000E8B5E2 /* Gemfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gemfile;
 			sourceTree = "<group>";
 		};
 		2FC86DB212B52A5DD216324F /* Frameworks */ = {
