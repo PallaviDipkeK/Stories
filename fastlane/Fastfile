@@ -10,6 +10,7 @@ platform :ios do
   build_app(scheme: "StoriesSDK",
             workspace: "StoriesSDK.xcworkspace",
             include_bitcode: true)
+slack(message: "Successfully distributed a new beta build")
     # upload_to_testflight
   end
 end
