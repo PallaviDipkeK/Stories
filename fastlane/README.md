@@ -18,10 +18,18 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 ### ios beta
 
 ```sh
-[bundle exec] fastlane ios release
+[bundle exec] fastlane ios beta
 ```
 
 Push a new beta build to TestFlight
+
+### ios release
+
+```sh
+[bundle exec] fastlane ios release
+```
+
+
 
 ----
 

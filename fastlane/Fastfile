@@ -15,13 +15,12 @@ slack(message: "Successfully distributed a new beta build")
     # upload_to_testflight
   end
 
-lane :setup do
+lane :release do
   build_app(scheme: "StoriesSDK",
             workspace: "StoriesSDK.xcworkspace",
             include_bitcode: true)
-slack(message: "Successfully distributed a new release build")
-    # upload_to_testflight
-  end
+end
+
 
 
 end
