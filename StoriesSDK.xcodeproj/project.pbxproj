@@ -50,6 +50,7 @@
 		0D160309275E5DF100767A35 /* StoriesSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoriesSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D16030B275E5DF100767A35 /* StoriesSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesSDKTests.swift; sourceTree = "<group>"; };
 		0D16030D275E5DF100767A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D60B31027761D21009F562D /* StoriesSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StoriesSDK.entitlements; sourceTree = "<group>"; };
 		347C75280C684E4C6D098046 /* Pods-StoriesSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoriesSDK.release.xcconfig"; path = "Target Support Files/Pods-StoriesSDK/Pods-StoriesSDK.release.xcconfig"; sourceTree = "<group>"; };
 		4A0C623092B7D68B45AC2893 /* Pods_StoriesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoriesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,6 +98,7 @@
 		0D11A8C52752096200F8C2CF /* StoriesSDK */ = {
 			isa = PBXGroup;
 			children = (
+				0D60B31027761D21009F562D /* StoriesSDK.entitlements */,
 				0D11A8F727520FB200F8C2CF /* story1.gif */,
 				0D11A8F627520FB200F8C2CF /* story2.gif */,
 				0D11A8C62752096200F8C2CF /* AppDelegate.swift */,
@@ -469,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StoriesSDK/StoriesSDK.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5TLXGJ5BJC;
@@ -491,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StoriesSDK/StoriesSDK.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5TLXGJ5BJC;
