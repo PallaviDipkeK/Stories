@@ -16,10 +16,26 @@ slack(message: "Successfully distributed a new beta build")
   end
 
 lane :release do
-  build_app(scheme: "StoriesSDK",
-            workspace: "StoriesSDK.xcworkspace",
-            include_bitcode: true)
-end
+  sigh(
+        development:false,
+        skip_certificate_verification:true
+      )
+
+      gym(
+        scheme: "StoriesSDK",
+        workspace: "StoriesSDK.xcworkspace",
+        output_directory: ".",
+        archive_path:".",
+        configuration: "Release",
+        export_method: "app-store",
+        export_options: {
+          provisioningProfiles: {
+            "co.opendigi.openbook" => "/.github/secrets/Open_Dev_Profile.mobileprovision.gpg"
+          }
+        }
+      )
+  end
+
 
 lane :setup do
   build_app(scheme: "StoriesSDK",
