@@ -21,11 +21,6 @@ lane :release do
             include_bitcode: true)
 end
 
-lane : setup do
-  build_app(scheme: "StoriesSDK",
-            workspace: "StoriesSDK.xcworkspace",
-            include_bitcode: true)
-end
 
 end
 

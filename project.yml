@@ -16,7 +16,7 @@ jobs:
         APPLE_ACCOUNT: ${{ secrets.APPLE_ACCOUNT }}
         TEAM_ID: ${{ secrets.TEAM_ID }}
       run: |
-        fastlane setup --verbose
+        fastlane release --verbose
     - name: Run fastlane build
       env:
         MATCH_REPO: ${{ secrets.MATCH_REPO }}
