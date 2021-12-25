@@ -30,7 +30,7 @@ lane :release do
         export_method: "app-store",
         export_options: {
           provisioningProfiles: {
-            "co.opendigi.openbook" => "/.github/secrets/Open_Dev_Profile.mobileprovision.gpg"
+            "co.opendigi.openbook" => "/.github/secrets/Open_Dist_Profiless.mobileprovision.gpg"
           }
         }
       )
